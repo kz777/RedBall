@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <script type="text/javascript" src=" https://storage.googleapis.com/ics-redball/redball.js"></script>
+    <script type="text/javascript">
+    function sayhello(){
+        alert('hi there');
+    }
+    function moveright(){
+        redball.left= redball.left +10;
+    }
+    function moveleft(){
+        redball.left= redball.left -10;
+    }
+    function moveup(){
+        redball.top= redball.top -10;
+    }
+    function movedown(){
+        redball.top= redball.top +10;
+    }
+    function movedownright(){
+        movedown();
+        moveright();
+        
+    }
+    function movedownleft(){
+        movedown();
+        moveleft();
+                  }
+    function moveleftup(){
+        moveleft();
+        moveup();
+    }
+    function moverightup(){
+        moveright();
+        moveup();
+    }
+    function moveoctagon(){
+        //sliide right//
+        moveright();
+        moveright();
+        moveright();
+        moveright();
+        moveright();
+        
+        //slide down right//
+        movedownright();
+        movedownright();
+        movedownright();
+        movedownright();
+        movedownright();
+        
+        //slide down//
+        movedown();
+        movedown();
+        movedown();
+        movedown();
+        movedown();
+        
+        //slide down left//
+        movedownleft();
+        movedownleft();
+        movedownleft();
+        movedownleft();
+        movedownleft();
+        
+        //slide left//
+        moveleft();
+        moveleft();
+        moveleft();
+        moveleft();
+        moveleft();
+        
+        //slide left up//
+        
+        moveleftup();
+        moveleftup();
+        moveleftup();
+        moveleftup();
+        moveleftup();
+        
+        //slide up//
+        
+        moveup();
+        moveup();
+        moveup();
+        moveup();
+        moveup();
+        
+        //slide right up//
+        
+        moverightup();
+        moverightup();
+        moverightup();
+        moverightup();
+        moverightup();
+    }
+    function movetriangle(){
+       movedownright();
+       movedownright();
+       movedownright();
+       movedownright();
+       movedownright();
+        
+        moveleft();
+        moveleft();
+        moveleft();
+        moveleft();
+        moveleft();
+        moveleft();
+        moveleft();
+        moveleft();
+        moveleft();
+        moveleft();
+        
+    moverightup();
+    moverightup();
+    moverightup();
+    moverightup();
+    moverightup();
+       
+        
+    }
+    function movesquare(){
+        //slide to the right and this idea is encapsulation in programming//
+        moveright();
+        moveright();
+        moveright();
+        moveright();
+        moveright();
+        moveright();
+        moveright();
+        //slide down//
+        movedown();
+        movedown();
+        movedown();  
+        movedown();
+        movedown();
+        movedown();
+        movedown();
+         //slide left//
+        moveleft();
+        moveleft();
+        moveleft();
+        moveleft();
+        moveleft();
+        moveleft();
+        moveleft();
+        //slide up//
+        moveup();
+        moveup();
+        moveup();
+        moveup();
+        moveup();
+        moveup();
+        moveup();
+        }
+        
+    </script>
+</head>
+<body>
+    <img id="redball" src="http://lrn.icstars.org/redball.jpg"></img>
+  <button onclick="sayhello()">hello worlds</button> 
+  <button onclick="moveright()">move right</button>
+  <button onclick="moveleft()">move left</button>
+  <button onclick="moveup()">move up</button>
+  <button onclick="movedown()">move down</button>
+  <button onclick="movesquare()">move square</button>
+  <button onclick="movedownright()">move down right</button>
+  <button onclick="movetriangle()">move triangle</button>
+  <button onclick="movedownleft()">move down left</button>
+  <button onclick="moveleftup()">move left up</button>
+  <button onclick="moverightup()">move right up</button>
+  <button onclick="moveoctagon()">move octagon</button>
+    </body>
+</html>
